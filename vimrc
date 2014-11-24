@@ -24,6 +24,7 @@ Plugin 'wakatime/vim-wakatime'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'sjl/gundo.vim'
 " Plugin 'bling/vim-airline'
 " End Vundle plugins <3
 call vundle#end()
@@ -37,12 +38,15 @@ highlight clear SignColumn
 
 set ttyfast " Improves redrawing
 set showcmd " Show commands at bottom right
+set nowrap " I do not like that damn wrapping
+
+" Indenting
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set smartindent
+set expandtab " Use spaces for indenting
 set autoindent
-set nowrap " I do not like that damn wrapping
 
 " Folding
 set foldmethod=manual
