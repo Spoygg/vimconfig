@@ -25,6 +25,7 @@ Plugin 'wakatime/vim-wakatime'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'sjl/gundo.vim'
+Plugin 'vim-scripts/YankRing.vim'
 " Plugin 'bling/vim-airline'
 " End Vundle plugins <3
 call vundle#end()
