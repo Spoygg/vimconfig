@@ -1,3 +1,4 @@
+call dirsettings#Install()
 set nocompatible
 
 """ Vundle stuff
@@ -26,6 +27,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'sjl/gundo.vim'
 Plugin 'vim-scripts/YankRing.vim'
+Plugin 'mantiz/vim-plugin-dirsettings'
 " Plugin 'bling/vim-airline'
 " End Vundle plugins <3
 call vundle#end()
@@ -194,9 +196,10 @@ set guioptions-=b
 
 " Use custom characters for tabstops and EOLs
 set listchars=tab:▸\ ,eol:●
+set list
 
 "Invisible character(tabstops, EOLs) custom color
-highlight NonText guifg=#124956
+highlight NonText guifg=#0D3640
 
 " Strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
